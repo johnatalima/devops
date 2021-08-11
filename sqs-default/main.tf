@@ -1,3 +1,8 @@
+provider "aws" {
+  region = "eu-central-1"
+}
+
+
 resource "aws_sqs_queue" "terraform_queue" {
   name                      = var.name
   delay_seconds             = var.delay_seconds
